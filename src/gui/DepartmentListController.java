@@ -1,7 +1,7 @@
 package gui;
 
 import java.io.IOException;
-import java.lang.ModuleLayer.Controller;
+
 import java.net.URL;
 
 import java.util.List;
@@ -88,6 +88,7 @@ public class DepartmentListController implements Initializable{
 			
 			DepartmentFormController controller = loader.getController();
 			controller.setDepartment(obj);
+			controller.setDepartmentService(new DepartmentService());
 			controller.updateFormData();
 			
 			
